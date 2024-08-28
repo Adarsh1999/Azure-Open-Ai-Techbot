@@ -1,5 +1,8 @@
 # GPT 4o Tech Bot 🤖
 
+### Modified from https://github.com/jainal09/Azure-Open-Ai-Techbot
+
+
 <table>
   <tr>
     <td>
@@ -82,4 +85,3 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduc
 This project is licensed under the [LICENSE.md](LICENSE.md) - see the file for details
 
 
-### Modified from https://github.com/jainal09/Azure-Open-Ai-Techbot
