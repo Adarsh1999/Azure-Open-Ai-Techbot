@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "tech-bot"
+version = "0.1.0"
+description = ""
+authors = ["jainal09 <jainal09gosalia@gmail.com>"]
+readme = "README.md"
+# packages = [{ include = "src/tech-bot" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+httpx = "^0.24.1"
+pyyaml = "^6.0.1"
+streamlit = "^1.35.0"
+tiktoken = "^0.7.0"
+openai = "^1.35.3"
+python-dotenv = "^1.0.1"
+autoflake = "^2.3.1"
+black = "^24.4.2"
+isort = "^5.13.2"
+mypy = "^1.10.0"
+flake8-pyproject = "^1.2.3"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.flake8]
+max-line-length = 88
+extend-ignore = ["E203", "W503"]
+exclude = [".git", "__pycache__", ".venv", ".mypy_cache", ".pytest_cache", ".vscode"]
+
+[tool.black]
+line-length = 88
