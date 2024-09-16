@@ -18,7 +18,7 @@ from src.tech_bot.configs import (
 )
 from src.tech_bot.utils import num_tokens_from_messages
 
-st.title(f"Azure Open AI: GPT 4 Tech Bot 🤖")
+st.title(f"Adarsh Helper")
 
 # Initialize session state variables
 if 'messages' not in st.session_state:
@@ -41,7 +41,10 @@ async def get_response():
             model=AZURE_DEPLOYMENT,
             messages=st.session_state.messages,
             stream=True,
-            temperature=0.8,
+            temperature=0.9,
+            max_tokens=4096,
+            top_p=0.95
+
         )
     except openai.BadRequestError:
         st.error(
